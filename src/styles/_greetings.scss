@@ -1,0 +1,75 @@
+.greetings {
+  padding: 54px 0 100px 0;
+
+  background-image: url("./../img/greetings/greetings-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__subtitle {
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    margin-bottom: 42px;
+  }
+}
+
+.video-frame {
+  background-image: url("./../img/greetings/greetings-video-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 770px;
+  height: 440px;
+  position: relative;
+
+  filter: drop-shadow(0px 45px 107px rgba(74, 0, 34, 0.07))
+    drop-shadow(0px 18.7999px 44.702px rgba(74, 0, 34, 0.0503198))
+    drop-shadow(0px 10.0513px 23.8999px rgba(74, 0, 34, 0.0417275))
+    drop-shadow(0px 5.6347px 13.3981px rgba(74, 0, 34, 0.035))
+    drop-shadow(0px 2.99255px 7.11561px rgba(74, 0, 34, 0.0282725))
+    drop-shadow(0px 1.24527px 2.96096px rgba(74, 0, 34, 0.0196802));
+  border-radius: 20px;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3035c3;
+    opacity: 0.6;
+    border-radius: 12px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    border-radius: 20px;
+    z-index: -1;
+  }
+
+  &__image {
+    z-index: 1;
+    cursor: pointer;
+
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+
+    &:hover {
+      border: 4px solid #ffffff;
+      border-radius: 50%;
+      path {
+        fill: #e6514a;
+      }
+    }
+  }
+}

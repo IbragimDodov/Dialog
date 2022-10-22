@@ -1,0 +1,40 @@
+.license {
+  padding: 60px 0;
+
+  &__inner {
+    background-image: url("./../img/license/license-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    // background-position: center;
+
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // column-gap: 80px;
+    // width: 100%;
+    // padding: 100px 70px;
+
+    color: #ffffff;
+  }
+
+  &__col {
+    // width: 550px;
+
+    // display: flex;
+    // flex-direction: column;
+    // flex-wrap: wrap;
+  }
+
+  &__title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 130%;
+    margin-bottom: 25px;
+  }
+
+  &__descr {
+    line-height: 150%;
+    margin-bottom: 32px;
+  }
+}
