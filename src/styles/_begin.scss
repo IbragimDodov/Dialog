@@ -1,0 +1,63 @@
+.begin {
+  padding: 60px 0px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    padding: 80px 600px 80px 70px;
+
+    background: linear-gradient(
+        90.03deg,
+        #3035c3 0.03%,
+        rgba(48, 53, 195, 0.954249) 21.37%,
+        rgba(48, 53, 195, 0.863855) 39.97%,
+        rgba(48, 53, 195, 0.718583) 55.19%,
+        rgba(48, 53, 195, 0) 99.97%
+      ),
+      url(02-8-facts-about-jelly-beans-turkey.jpg), #3035c4;
+
+    box-shadow: 0px 10px 40px rgba(73, 95, 211, 0.22);
+    border-radius: 20px;
+
+    background-image: url(./../img/begin/begin-bg.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    width: 100%;
+  }
+
+  &__subtitle {
+    text-transform: none;
+    margin-bottom: 20px;
+    margin-left: 52px;
+    color: #ffffff;
+  }
+
+  &__title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 130%;
+    color: #ffffff;
+    margin-bottom: 32px;
+  }
+
+  &__row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+
+    line-height: 150%;
+    color: #ffffff;
+    span {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 150%;
+      color: #e6514a;
+      margin-right: 16px;
+    }
+  }
+}
