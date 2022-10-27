@@ -2,23 +2,13 @@
   padding: 60px 0px;
 
   &__inner {
+    position: relative;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 
     padding: 80px 600px 80px 70px;
 
-    background: linear-gradient(
-        90.03deg,
-        #3035c3 0.03%,
-        rgba(48, 53, 195, 0.954249) 21.37%,
-        rgba(48, 53, 195, 0.863855) 39.97%,
-        rgba(48, 53, 195, 0.718583) 55.19%,
-        rgba(48, 53, 195, 0) 99.97%
-      ),
-      url(02-8-facts-about-jelly-beans-turkey.jpg), #3035c4;
-
-    box-shadow: 0px 10px 40px rgba(73, 95, 211, 0.22);
     border-radius: 20px;
 
     background-image: url(./../img/begin/begin-bg.png);
