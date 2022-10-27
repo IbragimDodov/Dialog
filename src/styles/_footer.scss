@@ -1,0 +1,140 @@
+.footer {
+  padding-top: 60pb 40px;
+  background: #3035c4;
+
+  &__logo-text {
+    font-size: 12px;
+    line-height: 150%;
+    color: #ffffff;
+
+    margin-top: 24px;
+  }
+
+  &__bold-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+  }
+
+  &__light-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+  }
+
+  &__contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    &-item {
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      img {
+        margin-right: 12px;
+      }
+    }
+  }
+
+  &__col {
+    flex: 1;
+
+    &-logo {
+      max-width: 198px;
+    }
+
+    &-address {
+      margin-bottom: 24px;
+    }
+
+    &-worktime {
+      margin-bottom: 24px;
+    }
+
+    &-contacts {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  }
+
+  &__row-top {
+    display: flex;
+    align-items: flex-start;
+
+    padding-top: 60px;
+    padding-bottom: 52px;
+
+    span {
+      display: inline-block;
+      margin-bottom: 12px;
+    }
+  }
+
+  &__col-nav {
+    flex: 2;
+    max-width: 470px;
+    margin-right: 130px;
+    margin-left: 100px;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    &-list {
+      margin-right: 63px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &-item {
+      margin-bottom: 24px;
+      cursor: pointer;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__row-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 40px;
+    border-top: 1px solid #ffffff30;
+
+    .socials__link {
+      path {
+        fill: #ffffff;
+      }
+    }
+  }
+
+  &__bottom-link {
+    margin-right: 24px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
