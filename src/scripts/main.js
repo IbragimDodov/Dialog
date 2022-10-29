@@ -46,4 +46,21 @@ window.addEventListener("DOMContentLoaded", () => {
   })
 
 
+  const tabHeaderItems = document.querySelectorAll('.tab__header-item');
+
+  tabHeaderItems.forEach(item => {
+    if (!item.classList.contains('tab__header-item--active')) {
+      item.classList.add('headerTabHover')
+    }
+  })
+
+  const teachersSliderDots = document.querySelectorAll('.teachers__slider-link');
+
+  teachersSliderDots.forEach(item => {
+    if (!item.classList.contains('teachers__slider-link--active')) {
+      item.classList.add('teacherDot')
+    }
+  })
+
+
 })

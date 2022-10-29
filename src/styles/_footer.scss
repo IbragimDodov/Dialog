@@ -112,6 +112,10 @@
       &:last-child {
         margin-bottom: 0;
       }
+
+      &:hover {
+        color: #e6514a;
+      }
     }
   }
 
@@ -135,6 +139,10 @@
 
     &:last-child {
       margin-right: 0;
+    }
+
+    &:hover {
+      text-decoration: underline;
     }
   }
 }

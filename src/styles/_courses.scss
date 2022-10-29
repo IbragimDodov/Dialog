@@ -51,7 +51,7 @@
     font-size: 18px;
     line-height: 150%;
     text-align: center;
-    color: #3035c4;
+    color: #9497e1;
     padding: 0px 15px 20px 15px;
     cursor: pointer;
 
@@ -60,6 +60,10 @@
       border-bottom: 3px solid #e6514a;
     }
   }
+}
+
+.tab__header-item:hover.headerTabHover {
+  color: #3035c4;
 }
 
 .tab {
@@ -204,6 +208,10 @@
   border-radius: 28.5px;
 
   cursor: pointer;
+
+  &:hover {
+    background-color: #3035c4;
+  }
 }
 
 .courses__next-btn {
