@@ -86,16 +86,23 @@ window.addEventListener("DOMContentLoaded", () => {
     hideContent();
     showContent();
 
-    // nextButton.addEventListener('click', () => {
-    //   tab.forEach((item, i) => {
-    //     if(item.classList.contains('tab__header-item--active')) {
-    //       console.log(item.nextElementSibling);
-    //       item.classList.remove('tab__header-item--active')
-    //       item.nextElementSibling.classList.add('tab__header-item--active')
-    //       return;
-    //     }
-    //   })
-    // })
+    nextButton.addEventListener('click', () => {
+      let activeTabIndex = [...tab].findIndex(item => item.classList.contains('tab__header-item--active'));
+      console.log(activeTabIndex)
+      if (tab[activeTabIndex]) {
+        hideContent();
+        showContent(tab.length > activeTabIndex + 1 ? activeTabIndex + 1 : 0);
+      }
+    })
+
+    prevButton.addEventListener('click', () => {
+      let activeTabIndex = [...tab].findIndex(item => item.classList.contains('tab__header-item--active'));
+      console.log(activeTabIndex)
+      if (tab[activeTabIndex]) {
+        hideContent();
+        showContent(activeTabIndex > 0 ? activeTabIndex - 1 : tab.length - 1);
+      }
+    })
 
     header.addEventListener('click', (e) => {
       const target = e.target;
@@ -114,5 +121,4 @@ window.addEventListener("DOMContentLoaded", () => {
   tabSlider('.courses__tab-header', '.tab__header-item', '.courses__tab-body', 'tab__header-item--active', '.courses__prev-btn', '.courses__next-btn');
 
   
-
 })
