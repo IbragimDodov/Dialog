@@ -1,22 +1,24 @@
 window.addEventListener("DOMContentLoaded", () => {
 
-  const headerButton = document.querySelector('.header__btn');
+  const headerButton = document.querySelectorAll('.btn');
   const popupOverlay = document.querySelector('.overlay');
   const popupClose = document.querySelector('.popup__close');
-  const formBtn = document.querySelector('.form__btn');
 
   const videoBlock = document.querySelector('.video-frame');
   const videoBtn = document.querySelector('.video-frame__image');
   
   function bindModal(trigger, modal, close) {
-    trigger.addEventListener('click', (e) => {
-      if(e.target) {
-        e.preventDefault();
-      }
-  
-      modal.style.display = "flex";
-      document.body.style.overflow = "hidden";
+    trigger.forEach(modalButton => {
+      modalButton.addEventListener('click', (e) => {
+        if(e.target) {
+          e.preventDefault();
+        }
+    
+        modal.style.display = "flex";
+        document.body.style.overflow = "hidden";
+      })
     })
+    
   
     close.addEventListener('click', () => {
       modal.style.display = "none";
