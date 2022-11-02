@@ -120,5 +120,27 @@ window.addEventListener("DOMContentLoaded", () => {
     
   tabSlider('.courses__tab-header', '.tab__header-item', '.courses__tab-body', 'tab__header-item--active', '.courses__prev-btn', '.courses__next-btn');
 
-  
+  const slider = document.querySelector('.teachers__slider');
+  const items = document.querySelectorAll('.teachers__slider-item');
+  const slideDots = document.querySelectorAll('.teachers__slider-link');
+
+  let position = 0;
+
+  function activeSlide(index) {
+    for (let dot of slideDots) {
+      dot.classList.remove('teachers__slider-link--active')
+    }
+    slideDots[index].classList.add('teachers__slider-link--active');
+
+  }
+
+  slideDots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      activeSlide(index);
+      position = 1183.17 * index;
+      slider.style.left = -position + 'px';
+    })
+  })
+
+
 })
