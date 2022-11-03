@@ -88,6 +88,119 @@ body {
   display: flex !important;
 }
 
+.mobile-menu {
+  display: none;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  .mobile__content-wrapp {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100vh;
+    padding-top: 26px;
+    padding-bottom: 32px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .mobile__top {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 36px;
+    border-top: 1px solid rgba(222, 222, 255, 0.5);
+  }
+
+  .mobile__contacts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 36px;
+
+    &-item {
+      margin-right: 0;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      margin-bottom: 28px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      img {
+        margin-right: 12px;
+      }
+    }
+  }
+
+  .mobile__main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .mobile__logo {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mobile__nav {
+    width: 100%;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      row-gap: 32px;
+      margin-top: 48px;
+      margin-bottom: 36px;
+
+      a {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        color: #23283b;
+      }
+    }
+  }
+
+  .mobile__btn {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 14px 28px 14px 58px !important;
+    margin-bottom: 36px;
+    position: relative;
+  }
+
+  .mobile__btn img {
+    position: absolute;
+    top: 50%;
+    left: 28px;
+    transform: translateY(-50%);
+  }
+}
+
+.burger-btn {
+  display: none;
+}
+
 @import "header.scss";
 @import "first-screen.scss";
 @import "greetings.scss";
@@ -102,3 +215,24 @@ body {
 @import "benefits.scss";
 @import "questions.scss";
 @import "footer.scss";
+
+// @media (max-width: 1024px) {
+// }
+
+// @media (max-width: 992px) {
+// }
+
+// @media (max-width: 768px) {
+// }
+
+// @media (max-width: 576px) {
+// }
+
+// @media (max-width: 425px) {
+// }
+
+// @media (max-width: 375px) {
+// }
+
+// @media (max-width: 320px) {
+// }
