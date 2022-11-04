@@ -22,3 +22,35 @@
     justify-content: space-between;
   }
 }
+
+@media (max-width: 1024px) {
+  .partners {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .partners__col {
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .partners__inner {
+    text-align: center;
+  }
+  .partners__title {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  .partners__col {
+    row-gap: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .partners__col-img {
+    width: 45%;
+  }
+}
