@@ -96,6 +96,10 @@
   }
   .second-screen__descr {
     display: block;
+    height: auto;
+    img {
+      height: 256px;
+    }
   }
 }
 

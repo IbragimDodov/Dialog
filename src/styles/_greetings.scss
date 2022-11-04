@@ -73,3 +73,36 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .greetings {
+    padding: 30px 0 50px 0;
+  }
+  .greetings__title {
+    margin-bottom: 20px;
+  }
+  .video-frame {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .greetings__inner {
+    text-align: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .greetings__title {
+    font-size: 36px;
+  }
+  .video-frame {
+    width: 100%;
+    height: 186px;
+
+    svg {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
