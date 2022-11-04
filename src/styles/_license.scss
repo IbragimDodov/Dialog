@@ -38,3 +38,49 @@
     padding: 16px 60px;
   }
 }
+
+@media (max-width: 1200px) {
+  .license {
+    padding: 40px 0;
+  }
+  .license::before {
+    left: 65px;
+  }
+}
+
+@media (max-width: 768px) {
+  .license__inner {
+    padding: 40px 20px 40px 290px;
+  }
+  .license::before {
+    left: 45px;
+  }
+}
+
+@media (max-width: 425px) {
+  .license {
+    margin-top: 30px;
+  }
+  .license__inner {
+    padding: 314px 26px 48px 26px;
+  }
+  .license::before {
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    width: 255px;
+    height: 340px;
+  }
+  .license__btn {
+    padding: 10px 16px;
+    font-size: 12px;
+  }
+  .license__title {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .license__descr {
+    line-height: 100%;
+    margin-bottom: 25px;
+  }
+}
