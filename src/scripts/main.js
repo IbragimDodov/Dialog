@@ -64,63 +64,63 @@ window.addEventListener("DOMContentLoaded", () => {
   //   }
   // })
 
-  // function tabSlider(headerSelector, tabSelector, contentSelector, activeClass, prevBtn, nextBtn) {
+  function tabSlider(headerSelector, tabSelector, contentSelector, activeClass, prevBtn, nextBtn) {
     
-  //   const header = document.querySelector(headerSelector);
-  //   const tab = document.querySelectorAll(tabSelector);
-  //   const content = document.querySelectorAll(contentSelector);
-  //   const prevButton = document.querySelector(prevBtn);
-  //   const nextButton = document.querySelector(nextBtn);
+    const header = document.querySelector(headerSelector);
+    const tab = document.querySelectorAll(tabSelector);
+    const content = document.querySelectorAll(contentSelector);
+    const prevButton = document.querySelector(prevBtn);
+    const nextButton = document.querySelector(nextBtn);
 
-  //   function hideContent() {
-  //     content.forEach(item => {
-  //       item.style.display = "none";
-  //     })
-  //     tab.forEach(item => {
-  //       item.classList.remove(activeClass);
-  //     })
-  //   }
+    function hideContent() {
+      content.forEach(item => {
+        item.style.display = "none";
+      })
+      tab.forEach(item => {
+        item.classList.remove(activeClass);
+      })
+    }
 
-  //   function showContent(i = 0) {
-  //     content[i].style.display = "block";
-  //     tab[i].classList.add(activeClass);
-  //   }
-  //   hideContent();
-  //   showContent();
+    function showContent(i = 0) {
+      content[i].style.display = "block";
+      tab[i].classList.add(activeClass);
+    }
+    hideContent();
+    showContent();
 
-  //   nextButton.addEventListener('click', () => {
-  //     let activeTabIndex = [...tab].findIndex(item => item.classList.contains('tab__header-item--active'));
-  //     console.log(activeTabIndex)
-  //     if (tab[activeTabIndex]) {
-  //       hideContent();
-  //       showContent(tab.length > activeTabIndex + 1 ? activeTabIndex + 1 : 0);
-  //     }
-  //   })
+    nextButton.addEventListener('click', () => {
+      let activeTabIndex = [...tab].findIndex(item => item.classList.contains('tab__header-item--active'));
+      console.log(activeTabIndex)
+      if (tab[activeTabIndex]) {
+        hideContent();
+        showContent(tab.length > activeTabIndex + 1 ? activeTabIndex + 1 : 0);
+      }
+    })
 
-  //   prevButton.addEventListener('click', () => {
-  //     let activeTabIndex = [...tab].findIndex(item => item.classList.contains('tab__header-item--active'));
-  //     console.log(activeTabIndex)
-  //     if (tab[activeTabIndex]) {
-  //       hideContent();
-  //       showContent(activeTabIndex > 0 ? activeTabIndex - 1 : tab.length - 1);
-  //     }
-  //   })
+    prevButton.addEventListener('click', () => {
+      let activeTabIndex = [...tab].findIndex(item => item.classList.contains('tab__header-item--active'));
+      console.log(activeTabIndex)
+      if (tab[activeTabIndex]) {
+        hideContent();
+        showContent(activeTabIndex > 0 ? activeTabIndex - 1 : tab.length - 1);
+      }
+    })
 
-  //   header.addEventListener('click', (e) => {
-  //     const target = e.target;
-  //     if (target && (target.classList.contains(tabSelector.replace(/\./, "")) || 
-  //       target.parentNode.classList.contains(tabSelector.replace(/\./, ""))  )) {
-  //         tab.forEach((item, i) => {
-  //           if (target == item || target.parentNode == item) {
-  //             hideContent();
-  //             showContent(i);
-  //           }
-  //         })
-  //       }
-  //     })
-  //   }
+    header.addEventListener('click', (e) => {
+      const target = e.target;
+      if (target && (target.classList.contains(tabSelector.replace(/\./, "")) || 
+        target.parentNode.classList.contains(tabSelector.replace(/\./, ""))  )) {
+          tab.forEach((item, i) => {
+            if (target == item || target.parentNode == item) {
+              hideContent();
+              showContent(i);
+            }
+          })
+        }
+      })
+    }
     
-  // tabSlider('.courses__tab-header', '.tab__header-item', '.courses__tab-body', 'tab__header-item--active', '.courses__prev-btn', '.courses__next-btn');
+  tabSlider('.courses__tab-header', '.tab__header-item', '.courses__tab-body', 'tab__header-item--active', '.courses__prev-btn', '.courses__next-btn');
 
   // const slider = document.querySelector('.teachers__slider');
   // const items = document.querySelectorAll('.teachers__slider-item');

@@ -239,3 +239,62 @@
     transform: translate(-50%, -50%);
   }
 }
+
+@media (max-width: 1024px) {
+  .courses {
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+  .courses__title {
+    margin-bottom: 30px;
+  }
+  .courses__tab-body {
+    padding: 20px;
+  }
+  .courses__tab-header {
+    margin-bottom: 10px;
+  }
+  .tab__info {
+    column-gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .courses__inner {
+    text-align: center;
+  }
+  .courses__btn {
+    display: none;
+  }
+  .courses__tab {
+    padding: 0;
+  }
+  .info-block__list {
+    row-gap: 5px;
+  }
+  .info-block__item span {
+    margin-bottom: 0;
+  }
+  .tab__descr {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .tab__info {
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+  .tab__info-item {
+    width: 100%;
+  }
+  .info-block__list {
+    align-items: center;
+  }
+  .tab__header-list {
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+}
